@@ -1,0 +1,25 @@
+ <html>
+  <head>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="boxTexture" src="img/cat-lasers.gif">
+        <img id="skyTexture" src="img/the-sky.jpeg">
+        <img id="skyTexture2" src="img/las-vegas-flats.jpg">
+        <img id="chihulySunroom" src="img/chihuly-sunroom.jpg">
+        <img id="chihulyCeiling" src="img/chihuly-ceiling.jpg">
+      </a-assets>
+
+      <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
+
+      <a-sky src="#chihulySunroom"></a-sky>
+
+      <!-- <a-plane rotation="-90 0 0" width="30" height="30" material="color: #FF0000; metalness: .5; roughness: 0;"></a-plane> -->
+
+      <a-light type="ambient" color="#001133"></a-light>
+      <a-light type="point" intensity="1" position"2 4 -10"></a-light>
+    </a-scene>
+  <body>
+</html>
