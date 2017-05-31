@@ -12,11 +12,22 @@
         <img id="chihulyCeiling" src="img/chihuly-ceiling.jpg">
       </a-assets>
 
-      <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
+      <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2">
+
+        <a-animation attribute="position" to="0 2.2 -5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
+        <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+        <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+
+      </a-box>
 
       <a-sky src="#chihulySunroom"></a-sky>
 
-      <!-- <a-plane rotation="-90 0 0" width="30" height="30" material="color: #FF0000; metalness: .5; roughness: 0;"></a-plane> -->
+      <a-camera>
+         <a-cursor></a-cursor>
+      <a-camera>
+
+      <a-plane rotation="-90 0 0" width="30" height="30" material="color: #FF0000; metalness: .5; roughness: 0;"></a-plane>
 
       <a-light type="ambient" color="#001133"></a-light>
       <a-light type="point" intensity="1" position"2 4 -10"></a-light>
